@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // largest element in array
+
+      /*  let arr=[10,20,4,45,99]
+        let largest=arr[0]
+
+        for(let i=0; i<arr.length; i++){
+            if(largest<arr[i]){
+                largest=arr[i]
+            }
+        }
+        console.log(largest)
+
+ */
+
+
+//  2nd largest array 
+
+/*
+let arr=[10,20,4,45,99,-2]
+let largest=arr[0]
+let seclargest=arr[0];
+for(let i=0; i<arr.length; i++){
+    if(largest<arr[i]){
+        largest=arr[i]
+    }
+}
+for(let i=0; i<arr.length; i++){
+    if(seclargest<arr[i] && largest!=arr[i]){
+        seclargest=arr[i];
+    }
+}
+console.log(seclargest)
+
+*/
+
+
+
+// sec smallest element in array
+/*
+let arr=[10,20,4,45,99]
+let smallest=arr[0]
+let secsmallest=arr[0]
+
+for(let i=0; i<arr.length; i++){
+    if(smallest>arr[i]){
+        smallest=arr[i]
+    }
+}
+
+for(let i=0; i<arr.length; i++){
+    if(secsmallest>arr[i]  && smallest!=arr[i]){
+        secsmallest=arr[i]
+    }
+}
+console.log(secsmallest)
+
+*/
+
+
+
+
+
+
+
+
+
+// check array sorted or not
+/*
+let arr=[1,2,3,4,5]
+let ascending=true;
+let descending=true;
+function sorted(arr){
+    for(let i=0; i<arr.length-1; i++){
+    if(arr[i]>arr[i+1]){
+      ascending= false;
+}
+if(arr[i]<arr[i+1]){
+    descending=false;
+}
+}
+return ascending||descending
+}
+console.log(sorted(arr))
+
+*/
+
+
+
+// reverse an array
+/*
+let arr=[1,2,3,4,5,6,7]
+let temp;
+
+    for(let i=0; i<arr.length/2; i++){
+temp=arr[i]
+arr[i]=arr[arr.length-1-i]
+arr[arr.length-1-i]=temp;
+}
+console.log(arr)
+
+
+*/
+
+
+// largest element
+/*
+let arr=[10,20,40,89,5]
+let largest=arr[0]
+for(let i=0; i<arr.length; i++){
+    if(largest<arr[i]){
+        largest=arr[i]
+    }
+    
+}
+console.log(largest)
+*/
+
+
+// second largest
+/*
+let arr=[10,20,40,89,5]
+let secondlargest=arr[0]
+let largest=arr[0]
+for(let i=0; i<arr.length; i++){
+    if(largest<arr[i]){
+        largest=arr[i]
+    }
+  
+}
+for(let i=0; i<arr.length; i++){
+    if(secondlargest<arr[i] && largest!=arr[i]){
+        secondlargest=arr[i]
+    }
+    
+}
+console.log(secondlargest)
+*/
+
+
+// smallest element
+/*
+let arr=[10,20,45,67,99,3]
+let smallest=arr[0]
+for(let i=0; i<arr.length; i++){
+    if(smallest>arr[i]){
+        smallest=arr[i]
+    }
+}
+console.log(smallest)
+*/
+
+// secondlargest element
+/*
+let arr=[20,44,8,6,90,22]
+    let smallest=arr[0]
+let secsmallest=arr[0]
+for(let i=0; i<arr[i]; i++){
+    if(smallest>arr[i]){
+        smallest=arr[i]
+    }
+}
+for(let i=0; i<arr[i]; i++){
+    if(secsmallest>arr[i] && smallest!=arr[i]){
+        secsmallest=arr[i]
+    }
+
+}
+console.log(secsmallest)
+*/
+
+
+// check if array is sorted in ascending
+/*
+let arr=[10,20,30,40,50]
+let asc=true
+let desc=true
+function sorted(arr){
+for(let i=0; i<arr.length-1; i++){
+   if(arr[i]>arr[i+1]){
+    asc=false
+   }
+   if(arr[i]<arr[i+1]){
+desc=false
+   }
+}
+return asc || desc
+
+
+}
+console.log(sorted(arr))
+
+*/
+
+
+
+
+    </script>
+</body>
+</html>
