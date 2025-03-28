@@ -180,7 +180,7 @@ console.log(secsmallest)
 
 // check if array is sorted in ascending
 /*
-let arr=[10,20,30,40,50]
+let arr=[10,20,30,4,50]
 let asc=true
 let desc=true
 function sorted(arr){
@@ -200,9 +200,49 @@ console.log(sorted(arr))
 
 */
 
+// **Find an Element in an Array (Linear Search)**
+//    - **Input:** `[10, 20, 30, 40, 50], key=30`
+//    - **Output:** `Found at index 2`
 
 
+/*
+let arr=[10,20,30,40,50]
+let key=30
+for(let i=0; i<arr.length; i++){
+    if(key===arr[i]){
+        console.log("found at index "+i)
+    }
+}
+*/
+
+
+
+
+
+// binary search
+let arr=[10,20,30,40,50]
+let key=4
+
+function search(arr,key){
+let start=0; let end=arr.length-1
+
+while(start<=end){
+    let mid=Math.floor((start+end)/2)
+
+    if(arr[mid]==key){
+        return mid;
+    } else if(arr[mid]<key){
+        start=mid+1;
+    }else{
+        end=mid-1
+    }
+}
+return -1
+}
+console.log(search(arr,key))
 
     </script>
+    <!-- <script src="app1.js" type="module" ></script> -->
+    
 </body>
 </html>
