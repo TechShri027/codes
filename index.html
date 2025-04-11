@@ -220,6 +220,7 @@ for(let i=0; i<arr.length; i++){
 
 
 // binary search
+/*
 let arr=[10,20,30,40,50]
 let key=4
 
@@ -240,6 +241,101 @@ while(start<=end){
 return -1
 }
 console.log(search(arr,key))
+*/
+
+
+
+
+// // bubble sort
+// let arr=[23,5,1,66,99,56]
+// let n=arr.length;
+// for(let i=0; i<n; i++){
+//     for(let j=0; j<n-i-1; j++){
+//         if(arr[j]>arr[j+1]){
+//             [arr[j],arr[j+1]]=[arr[j+1],arr[j]]
+//         }
+//     }
+    
+// }
+// console.log(arr)
+
+
+
+
+/*
+// selection sort
+let arr=[23,5,1,66,90,56]
+let n=arr.length
+let j;
+for(let i=0; i<n-1; i++){
+    let smallest=i;
+    for( j=i+1; j<n; j++){
+        if(arr[j]<arr[smallest]){
+            smallest=j
+        }
+    }
+     if(smallest!==i){
+
+    
+        [arr[smallest],arr[i]]=[arr[i],arr[smallest]]
+    
+    }
+}
+    
+    
+
+console.log(arr)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+// **Find the Largest Element in an Array**
+//    - **Input:** `[10, 20, 4, 45, 99]`
+
+let arr=[10,20,4,45,1099]
+let largest=arr[0]
+for(let i=0; i<arr.length; i++){
+    if(largest<arr[i]){
+        largest=arr[i]
+    }
+}
+console.log(largest)
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </script>
     <!-- <script src="app1.js" type="module" ></script> -->
