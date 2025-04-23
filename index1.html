@@ -323,6 +323,12 @@ console.log(largest)
 
 
 
+
+
+
+
+/*
+
 // 2. **Find the Second Largest Element in an Array**
 //    - **Input:** `[10, 20, 4, 45, 99]`
 //    - **Output:** `45
@@ -344,6 +350,42 @@ for(let i=0; i<arr.length; i++){
     
 }
 console.log("2nd largest is "+ secondlargest + "and largest is "+ largest)
+
+
+*/
+
+
+
+// remove duplicate array elemnts
+let arr=[1,2,3,2,4,5,1,6]
+
+function duplicate(arr){
+    let uniquearr=[]
+for(let i=0; i<arr.length; i++){
+    let found=false;
+    for(let j=0; j<uniquearr.length; j++){
+        if(arr[i]===uniquearr[j]){
+            found=true;
+            break;
+        }
+       
+    }
+    if(!found){
+        uniquearr.push(arr[i])
+    }
+   
+}
+return uniquearr;
+}
+console.log(duplicate(arr))
+
+
+
+
+
+
+
+
 
 
 
