@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="app.js"></script>
-</head>
-<body>
-    <script>
+
         // largest element in array
 
       /*  let arr=[10,20,4,45,99]
@@ -429,9 +420,3 @@ console.log(arr)
 
 
 
-
-    </script>
-    <!-- <script src="app1.js" type="module" ></script> -->
-    
-</body>
-</html>
