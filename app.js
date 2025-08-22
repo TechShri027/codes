@@ -1,4 +1,190 @@
+ /*
+        // reverse of an array in another array
+        const arr=[1,2,3,4,5]
+        let reverse=[]
+        for(let i=arr.length-1; i>=0; i--){
+            reverse+=arr[i]+","
+        }
+        console.log(`[${reverse}]`)
+*/
 
+
+
+
+
+
+
+
+
+
+
+
+/*
+//reverse of an array in same array
+const arr=[90,91,92,93,94]
+let temp;
+for(let i=0; i<(arr.length-1)/2; i++){
+    temp=arr[i]
+    arr[i]=arr[arr.length-1-i]
+    arr[arr.length-1-i]=temp
+}
+console.log(arr)
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+// sum of arr
+/*
+const arr=[90,91,92,93,94]
+let sum=0;
+for(let i=0; i<=arr.length-1; i++){
+    sum+=arr[i]
+}
+console.log(sum)
+*/
+
+
+
+
+
+
+
+
+//  Merge two arrays.
+/*
+const a=[1,2]
+const b=[3,4]
+let c=[]
+
+for(let i=0; i<a.length; i++){
+    c[i]=a[i]
+}
+
+for(let i=0; i<b.length; i++){
+    c[a.length+i]=b[i]
+}
+console.log(`[${c}]`)
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+// flattern array
+let arr=[1,2,[3,4],5,6,[7,6,5],[1,[3],7],[9],8,[5,[6,[9]]]]
+let new_arr=[]
+// console.log(arr.flat(Infinity))
+function flattern(arr){
+arr.map((item)=>{
+    if(Array.isArray(item)){
+flattern(item)
+    }else{
+new_arr.push(item)
+    }
+})
+}
+
+flattern(arr)
+console.log(new_arr)
+*/
+
+
+
+
+
+
+
+
+/*
+
+//remove duplicate
+const arr=[1,2,3,2,3,4,4,5,6,4,5,7,8,9,1,2]
+const new_arr=[]
+
+
+for(let i=0; i<arr.length; i++){
+    let isDuplicate=false;
+for(let j=0; j<new_arr.length; j++){
+    if(arr[i]==new_arr[j]){
+        isDuplicate=true;
+        break
+    }
+}
+if(!isDuplicate){
+    new_arr[new_arr.length]=arr[i]
+}
+}
+console.log(new_arr)
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+//rotate k elements by 2 right
+let arr=[1,2,3,4,5]
+let new_arr=[]
+let k=2;
+let n=arr.length
+
+for(let i=n-k; i<n; i++){
+new_arr[new_arr.length]=arr[i]
+}
+for(let i=0; i<n-k; i++){
+    new_arr[new_arr.length]=arr[i]
+}
+     console.log(new_arr) 
+*/
+
+/*
+//rotate k elements by 2 left
+
+let arr=[1,2,3,4,5]
+let new_arr=[]
+let k=2;
+let n=arr.length
+for(let i=k; i<n; i++){
+    new_arr[new_arr.length]=arr[i]
+}
+for(let i=0; i<k; i++){
+     new_arr[new_arr.length]=arr[i]
+}
+   console.log(new_arr)   
+   */  
+
+   
         // largest element in array
 
       /*  let arr=[10,20,4,45,99]
@@ -389,14 +575,14 @@ console.log(duplicate(arr))
 
 
 
-
+/*
 // remove duplicate from same array
 let arr=[1,2,3,2,4,5,1,3,6]
 for(let i=0; i<arr.length; i++){
     for(let j=i+1; j<arr.length; j++){
         if(arr[i]===arr[j]){
             for(let k=j; k<arr.length-1; k++){
-            arr[k]=arr[k+1]
+            arr[k]=arr[k+1] 
             }
             arr.length--;
             j--
@@ -404,6 +590,7 @@ for(let i=0; i<arr.length; i++){
     }
 }
 console.log(arr)
+*/
 
 
 
@@ -415,6 +602,171 @@ console.log(arr)
 
 
 
+/*
+//  Reverse an array.
+const arr=[1,2,3,4,5]
+let reverse_arr=[]
+for(let i=arr.length-1; i>=0; i--){
+reverse_arr+=arr[i]+","
+}
+console.log(`[${reverse_arr}]`)
+*/
+
+
+
+
+/*
+// reverse array in same
+
+const arr=[1,2,3,4,5]
+let temp;
+for(let i=0; i<(arr.length)/2; i++){
+temp=arr[i]
+arr[i]=arr[arr.length-1-i]
+arr[arr.length-1-i]=temp;
+}
+console.log(arr)
+*/
+
+
+
+// reverse an array in same array
+/*
+let arr=[1,2,3,4,5]
+for(let i=0; i<(arr.length)/2; i++){
+let temp=arr[i]
+arr[i]=arr[arr.length-1-i]
+arr[arr.length-1-i]=temp
+}
+console.log(arr)
+
+*/
+
+
+// reverse an array in different
+
+// let arr=[1,2,3,4,5]
+// let reverse=[]
+// for(let i=arr.length-1; i>=0; i--){
+//     reverse+=arr[i]
+// }
+// console.log(reverse)
+
+
+// falttern nested array
+
+// const arr = [1, [2, 3], [4, [5]]];
+
+// function flattern(arr){
+// arr.map((item)=>{
+//     if(Array.isArray(item)){
+//          flattern(item)
+//     }else{
+//         console.log(item)
+//     }
+// })
+// }
+// flattern(arr)
+
+
+
+
+
+
+// remove duplicate array same array
+// const arr = [1, 2, 2, 3, 4, 4, 5];
+// for(let i=0; i<arr.length; i++){
+//     for(let j=i+1; j<arr.length; j++){
+//         if(arr[i]===arr[j]){
+//             for(let k=j; k<arr.length-1; k++){
+//                 arr[k]=arr[k+1]
+//             }
+//             arr.length--
+//             j--
+//         }
+//     }
+// }
+// console.log(arr)
+
+
+
+// remove duplicate array diff array
+// const arr = [1, 2, 2, 3, 4, 4, 5];
+
+// function remove(arr){
+//     let uniquearr=[]
+//     for(let i=0; i<arr.length; i++){
+//         let found=false;
+//         for(let j=0; j<uniquearr.length; j++){
+//             if(arr[i]===uniquearr[j]){
+//                 found =true
+//                 break;
+//             }
+//         }
+    
+//     if(!found){
+//         uniquearr.push(arr[i])
+//     }
+// }
+//     return uniquearr
+// }
+
+// console.log(remove(arr))
+
+
+
+// maxi
+// const arr = [3, 5, 7, 2, 8];
+// let max=arr[0]
+// for(let i=0; i<arr.length; i++){
+//     if(max<arr[i]){
+//         max=arr[i]
+//     }
+// }
+// console.log(max)
+
+
+
+
+// 2nd largest
+// const arr = [3, 5, 7, 2, 8];
+// let max=arr[0]
+// let max2=arr[0];
+// for(let i=0; i<arr.length; i++){
+//     if(max<arr[i]){
+//         max=arr[i]
+//     }
+// }
+// for(let i=0; i<arr.length; i++){
+//     if(max2<arr[i] && max!=arr[i]){
+//         max2=arr[i]
+//     }
+// }
+// console.log(max2)
+
+
+
+//  Sum all elements in an array.
+// let arr=[1,2,3,4,5]
+// let sum=0
+// for(let i=0; i<arr.length; i++){
+//     sum+=arr[i]
+// }
+// console.log(sum)
+
+
+// check if all elements are even
+const arr=[2,3,6,8]
+ let flag=true;
+for(let i=0; i<arr.length; i++){
+   
+    if(arr[i]%2 !==0){
+        flag=false
+        break;
+    }
+}
+
+        console.log(flag)
 
 
 
