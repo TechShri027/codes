@@ -756,7 +756,7 @@ console.log(arr)
 
 
 // check if all elements are even
-const arr=[2,3,6,8]
+/* const arr=[2,3,6,8]
  let flag=true;
 for(let i=0; i<arr.length; i++){
    
@@ -767,6 +767,354 @@ for(let i=0; i<arr.length; i++){
 }
 
         console.log(flag)
+
+        */
+
+ //count occurance of a value
+//  const arr=[1,2,2,3,2]
+//   let count=0
+//  for(let i=0; i<arr.length; i++){
+   
+//     for(let j=i+1; j<arr.length; j++){
+//         if(arr[i]==arr[j]){
+//           count++
+//         }
+//     }
+   
+//  } 
+//   console.log(`${arr[i]} is occurred ${count+1}`)
+
+
+
+
+
+// const a=[1,2]
+// const b=[3,4]
+// let i;
+// let c=[]
+// for( i=0; i<a.length; i++){
+//     c[i]=a[i]
+    
+// }
+// for(i=0; i<b.length; i++){
+//     c[a.length+i]=b[i]
+// }
+// console.log(c[i])
+
+
+// rotate arr by 2 
+// let arr=[1,2,3,4,5]
+// let k=2
+// let n=arr.length
+// let new_arr=[]
+
+// for(let i=n-k; i<n; i++){
+//     new_arr[new_arr.length]=arr[i]
+// }
+// for(let i=0; i<n-k; i++){
+//     new_arr[new_arr.length]=arr[i]
+// }
+// console.log(new_arr)
+
+
+
+// check all ele are eve
+// let arr=[2,4,6,8,10]
+// let flag=true
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i]%2!==0){
+//          flag=false
+//          break
+        
+//     }
+// }
+// console.log(flag)
+
+
+
+
+
+
+// 9. Count occurrences of a value.
+// Output for value = 2:
+// 3
+// const arr = [1, 2, 2, 3, 2];
+// for(let i=0; i<arr.length; i++){
+//     let count=0
+//      if (arr.indexOf(arr[i]) !== i) continue;
+//     for(let j=0; j<arr.length; j++){
+//         if(arr[i]==arr[j]){
+//             count++
+//         }
+//     }
+//     console.log('count is', count + 'of a number', arr[i])
+// }
+
+
+
+
+
+
+
+// 10. Find the index of the second occurrence of a value.
+
+// Output for value = 5:
+// 2
+// const arr = [5, 1, 1, 2, 2];
+// for(let i=0; i<arr.length; i++){
+//     for(let j=i+1; j<arr.length; j++){
+//         if(arr[i]==arr[j]){
+//         return    console.log(`value is ${arr[i]} and index is ${j}`)
+        
+//         }
+        
+//     }
+// }
+
+
+
+
+
+
+
+// 11. Filter even numbers.
+// Output:
+// [2, 4]
+// const arr = [1, 2, 3, 4, 5];
+// let new_arr=[]
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i] % 2==0){
+//         new_arr[new_arr.length]=arr[i]
+//     }
+// }
+// console.log(new_arr)
+
+
+
+// 12. Sort an array in descending order.
+// Output:
+// [4, 3, 2, 1]
+// const arr = [3, 1, 4, 2];
+// for(let i=0; i<arr.length; i++){
+// if(arr[i]<arr[i+1]){
+// let temp=arr[i]
+// arr[i]=arr[i+1]
+// arr[i+1]=temp
+// }
+// }
+// console.log(arr)
+
+
+
+
+
+
+// 13. Find common elements in two arrays.
+// Output:
+// [2, 3]
+
+// const a = [1, 6, 8];
+// const b = [2, 3, 4];
+// for(let i=0; i<a.length; i++){
+//     for(j=0; j<b.length; j++){
+//         if(a[i]==b[j]){
+//             console.log(a[i])
+//         }
+//     }
+// }
+
+
+
+
+// **14. Find unique elements from two arrays.**
+// Output:
+// [1, 2, 4, 5]
+// const a = [1, 2, 3];
+// const b = [3, 4, 5];
+// let c=[]
+// for(let i=0; i<a.length; i++){
+//     let found=false;
+//     for(let j=0; j<b.length; j++){
+//         if(a[i]===b[j]){
+// found =true
+// break;
+//         }
+//     }
+//     if(!found){
+//         c.push(a[i])
+//     }
+// }
+// for(let i=0; i<b.length; i++){
+//     let found=false
+//     for(let j=0; j<a.length; j++){
+//         if(b[i]===a[j]){
+//             found = true
+//             break
+//         }
+//     }
+//     if(!found){
+//         c.push(b[i])
+//     }
+// }
+// console.log(c)
+
+
+
+
+
+
+
+
+
+
+
+
+// **15. Remove falsy values from an array.**
+// Output:
+// ["a", 5]
+// const arr = [0, "a", "", false, 5];
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i]===0 || arr[i]===false || arr[i]===""){
+//         for(let j=i; j<arr.length; j++){
+//             arr[j]=arr[j+1]
+//         }
+//         arr.length--
+// i--;
+//     }
+// }
+// console.log(arr)
+
+
+// **17. Find the longest string in an array.**
+
+// Output:
+// "abcd"
+// const arr = ["a", "abcd", "abc"];
+// let longest=""
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i].length>longest.length){
+//         longest=arr[i]
+//     }
+// }
+// console.log(longest)
+
+
+
+
+
+// **19. Find second largest number.**
+
+// Output:
+// 7
+// const arr = [5, 3, 9, 7];
+// let largest=arr[0]
+// let sec_longest=arr[0]
+// for(let i=0; i<arr.length; i++){
+//     if(largest<arr[i]){
+//         largest=arr[i]
+//     }
+// }
+// for(let i=0; i<arr.length; i++){
+//     if(sec_longest<arr[i] || largest!==arr[i]){
+//         sec_longest=arr[i]
+//     }
+// }
+// console.log(sec_longest)
+
+
+
+
+
+// **20. Find missing number from a sequence.**
+
+// Output:
+// 3
+// const arr = [1, 2, 4, 5];
+// let missing;
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i+1]-arr[i]!==1){
+// missing=arr[i]+1
+// break
+//     }
+// }
+// console.log(missing)
+
+
+
+
+
+
+
+
+
+// 21. Remove first and last element.
+// Output:
+// [2, 3]
+
+// const arr = [1, 2, 3, 4];
+// let new_arr=[]
+// for(let i=1; i<arr.length-1; i++){
+//     new_arr[new_arr.length]=arr[i]
+// }
+// console.log(new_arr)
+
+
+
+
+
+22. Find intersection without duplicates.
+
+
+// Input:
+const a = [1, 2, 2, 3];
+const b = [2, 2, 3];
+// Output:
+// [2, 3]
+
+
+
+
+
+
+// 16. Chunk an array into smaller arrays.
+
+// chunk size = 2
+// Output:
+// [[1, 2], [3, 4], [5]]
+// const arr = [1, 2, 3, 4, 5];
+// let temp=[]
+// let result=[]
+// let chunk=2
+// for(let i=0; i<arr.length; i++){
+//     temp.push(arr[i])
+
+//     if(temp.length==chunk){
+//         result.push(temp)
+//         temp=[]
+//     }
+// }
+// if(temp.length>0){
+//     result.push(temp)
+// }
+// console.log(result)
+
+
+
+
+
+
+// . Convert array to object using index as key.
+
+// Output:
+// {0: 'a', 1: 'b'}
+// const arr = ['a', 'b'];
+// let obj={}
+// for(let i=0; i<arr.length; i++){
+//     obj[i]=arr[i]
+// }
+// console.log(obj)
+
+
 
 
 
