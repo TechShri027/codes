@@ -1226,6 +1226,19 @@ for(let i=0; i<arr.length; i++){
 // Input: "true"
 // Output: true
 
+// let str="true"
+// console.log(Boolean(str))
 
-let str="true"
-console.log(Boolean(str))
+
+
+
+
+
+// Check if a string is a valid email.**
+// Input: "user@example.com"
+// Output: true
+
+// let email="user@gmail.com"
+// let emailRegex=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+
+//     console.log(emailRegex.test(email))
