@@ -7,7 +7,42 @@
     
 </head>
 <body>
-   
+  <label for="fruits">Choose a fruit:</label>
+<select id="fruits" name="fruits">
+  <option value="apple">Apple</option>
+  <option value="banana">Banana</option>
+  <option value="mango">Mango</option>
+</select>
+
+
+<select>
+  <option value="html">HTML</option>
+  <option value="css" selected>CSS</option>
+  <option value="js">JavaScript</option>
+</select>
+
+
+
+<select name="skills" multiple>
+  <option value="html">HTML</option>
+  <option value="css">CSS</option>
+  <option value="js">JavaScript</option>
+</select>
+
+
+
+
+<select>
+  <optgroup label="Frontend">
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+  </optgroup>
+  <optgroup label="Backend">
+    <option value="node">Node.js</option>
+    <option value="express">Express</option>
+  </optgroup>
+</select>
+
 <script src="app.js"></script>
 </body>
 </html>

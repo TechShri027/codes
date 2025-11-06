@@ -1062,14 +1062,30 @@ for(let i=0; i<arr.length; i++){
 
 
 
-22. Find intersection without duplicates.
-
-
-// Input:
-const a = [1, 2, 2, 3];
-const b = [2, 2, 3];
+// 22. Find intersection without duplicates.
 // Output:
 // [2, 3]
+// const a = [1, 2, 2, 3];
+// const b = [2, 2, 3];
+// let new_arr=[]
+// for(let i=0; i<a.length;i++){     //2
+//     for(let j=0; j<b.length; j++){   //2
+//         if(a[i]==b[j]){    
+//             let existed=false
+//             for(let k=0; k<new_arr.length; k++){   
+//                 if(new_arr[k]==a[i]){   
+//                     existed=true;
+//                     break
+//                 }
+//             }
+
+// if(!existed){
+//   new_arr[new_arr.length]=a[i]  
+// }
+//         }
+//     }
+// }
+// console.log(new_arr)
 
 
 
@@ -1116,7 +1132,100 @@ const b = [2, 2, 3];
 
 
 
+// Replace every element with its square.
+
+// Output:
+// [1, 4, 9]
+// const arr = [1, 2, 3];
+// for(let i=0; i<arr.length; i++){
+//     arr[i]=arr[i]*arr[i]
+// }
+// console.log(arr)
 
 
 
 
+
+
+
+// 24. Find average of elements.
+
+// Output:
+// 5
+// const arr = [2, 4, 6, 8];
+// let sum=0
+// for(let i=0; i<arr.length; i++){
+//      sum+=arr[i]
+// }
+// console.log(Math.round(sum/(arr.length-1)))
+
+
+
+
+
+// console.log(this)     //node environment empty    //browser me window
+
+
+
+// function show(){
+//     console.log(this)   //global object
+// }
+// show()
+
+
+
+// const show=()=>{
+//     console.log(this)      //empty
+// }
+// show() 
+
+
+// const obj={
+//     username:"shrishti",
+//     password:"123",
+
+//     // show(){
+//     //     console.log(this)
+//     // }
+
+
+//     show: ()=> console.log(this.username)
+    
+// }
+// obj.show()
+
+
+// const arr1 = [1, 2, 3];
+// const arr2 = arr1;
+
+// console.log(arr1 === arr2); 
+
+
+
+// const arr1 = [1, 2, 3];
+// const arr2 = [1, 2, 3];
+
+// console.log(arr1 == arr2); // false
+
+
+// const obj1 = { name: "Shrishti" };
+// const obj2 = { name: "Shrishti" };
+
+// console.log(obj1 == obj2); // false
+
+
+// console.log(3+5+"7")
+
+
+
+
+
+
+
+// Convert string to boolean.**
+// Input: "true"
+// Output: true
+
+
+let str="true"
+console.log(Boolean(str))
