@@ -1242,3 +1242,17 @@ for(let i=0; i<arr.length; i++){
 // let emailRegex=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 
 //     console.log(emailRegex.test(email))
+
+
+
+
+
+
+// **38. Find substring between two characters.**
+// Input: "hello(world)", between "(" and ")"
+// Output: "world"
+
+let str="hello(world)";
+
+console.log(str.slice(6,11))
+
