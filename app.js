@@ -1252,7 +1252,17 @@ for(let i=0; i<arr.length; i++){
 // Input: "hello(world)", between "(" and ")"
 // Output: "world"
 
-let str="hello(world)";
+// let str="hello(world)";
 
-console.log(str.slice(6,11))
+// console.log(str.slice(6,11))
+
+
+
+// **37. Convert a string to title case.**
+// Input: "hello javascript developer"
+// Output: "Hello Javascript Developer"
+//  let str="hello javascript developer"
+// let result=str.split(" ").map(word=>word.charAt(0).toUpperCase()+word.slice(1).toLowerCase()).join(" ")
+//  console.log(result)
+
 
