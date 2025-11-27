@@ -98,3 +98,20 @@
 //     if(str[i]!==" ") result+=str[i]
 // }
 // console.log(result)
+
+
+
+// **8. Replace all occurrences of a word in a string.**
+// Input: "I love cats. Cats are great.", replace "Cats" with "Dogs"
+// Output: "I love cats. Dogs are great."
+
+// let str="I love cats. Cats are great."
+// let splitstr=str.split(" ")
+
+// for(let i=0; i<splitstr.length; i++){
+//    if(splitstr[i]=='Cats')
+//       splitstr[i]="dogs"
+   
+
+// }
+// console.log(splitstr.join(" "))
