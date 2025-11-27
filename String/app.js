@@ -1,5 +1,6 @@
 // reverse a string
 
+
 // let str="developer"
 // let reverse=str.split("").reverse().join("")
 // console.log(reverse)
@@ -26,4 +27,74 @@
 
 
 
+// **4. Convert the first letter of each word to uppercase.**
+// Input: "hello world"
+// Output: "Hello World"
 
+// let str="hello world"
+// let splitstr=str.split(" ").map((word)=>word.charAt(0).toUpperCase()+word.slice(1).join(" "))
+// console.log(splitstr)
+
+
+
+
+
+
+
+// **5. Find the longest word in a sentence.**
+// Input: "I love JavaScript programming"
+// Output: "JavaScript"
+
+// let str="I love JavaScript programming"
+// let lengths=str.split(" ").map((word)=>word.length)
+// let maxLen=Math.max(...lengths)
+
+// let compare=word.find(word=>word.length==maxLen)
+// console.log(compare)
+
+
+
+// let str="I love JavaScriptssss programming"
+// let strsplit=str.split(" ")
+// let longest=""
+// for(let i=0; i<strsplit.length; i++){
+//     if(strsplit[i].length>longest.length)
+//         longest=strsplit[i]
+// }
+// console.log(longest)
+
+
+
+
+
+
+
+
+
+
+// **6. Count the number of words in a sentence.**
+// Input: "This is a test"
+
+// let str="This is a r r test"
+// let strsplit=str.split(" ")
+// let count=0
+// for(let i=0; i<strsplit.length; i++){
+// count++
+// }
+// console.log(count)
+
+
+
+
+
+
+// **7. Remove all spaces from a string.**
+// Input: "a b c d"
+// Output: "abcd"
+
+// let str="a b c d"
+// let result=""
+// for(let i=0; i<str.length; i++){
+//     if(str[i]!==" ") result+=str[i]
+// }
+// console.log(result)
