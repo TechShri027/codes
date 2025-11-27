@@ -1266,3 +1266,26 @@ for(let i=0; i<arr.length; i++){
 //  console.log(result)
 
 
+
+
+// **36. Remove punctuation from a string.**
+// Input: "Hello, world!"
+// Output: "Hello world"
+
+// let str="Hello, word!"
+// let result=str.replace(/[.,!?;:]/g, "")
+// console.log(result)
+
+
+// **35. Replace numbers with "#" in a string.**
+// Input: "abc123def"
+// Output: "abc###def"
+
+
+
+//  Reverse a string.**
+// Input: "hello"
+// Output: "olleh"
+
+
+
