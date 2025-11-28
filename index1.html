@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // largest element in array
+
+      /*  let arr=[10,20,4,45,99]
+        let largest=arr[0]
+
+        for(let i=0; i<arr.length; i++){
+            if(largest<arr[i]){
+                largest=arr[i]
+            }
+        }
+        console.log(largest)
+
+ */
+
+
+//  2nd largest array 
+
+/*
+let arr=[10,20,4,45,99,-2]
+let largest=arr[0]
+let seclargest=arr[0];
+for(let i=0; i<arr.length; i++){
+    if(largest<arr[i]){
+        largest=arr[i]
+    }
+}
+for(let i=0; i<arr.length; i++){
+    if(seclargest<arr[i] && largest!=arr[i]){
+        seclargest=arr[i];
+    }
+}
+console.log(seclargest)
+
+*/
+
+
+
+// sec smallest element in array
+/*
+let arr=[10,20,4,45,99]
+let smallest=arr[0]
+let secsmallest=arr[0]
+
+for(let i=0; i<arr.length; i++){
+    if(smallest>arr[i]){
+        smallest=arr[i]
+    }
+}
+
+for(let i=0; i<arr.length; i++){
+    if(secsmallest>arr[i]  && smallest!=arr[i]){
+        secsmallest=arr[i]
+    }
+}
+console.log(secsmallest)
+
+*/
+
+
+
+
+
+
+
+
+
+// check array sorted or not
+/*
+let arr=[1,2,3,4,5]
+let ascending=true;
+let descending=true;
+function sorted(arr){
+    for(let i=0; i<arr.length-1; i++){
+    if(arr[i]>arr[i+1]){
+      ascending= false;
+}
+if(arr[i]<arr[i+1]){
+    descending=false;
+}
+}
+return ascending||descending
+}
+console.log(sorted(arr))
+
+*/
+
+
+
+// reverse an array
+/*
+let arr=[1,2,3,4,5,6,7]
+let temp;
+
+    for(let i=0; i<arr.length/2; i++){
+temp=arr[i]
+arr[i]=arr[arr.length-1-i]
+arr[arr.length-1-i]=temp;
+}
+console.log(arr)
+
+
+*/
+
+
+// largest element
+/*
+let arr=[10,20,40,89,5]
+let largest=arr[0]
+for(let i=0; i<arr.length; i++){
+    if(largest<arr[i]){
+        largest=arr[i]
+    }
+    
+}
+console.log(largest)
+*/
+
+
+// second largest
+/*
+let arr=[10,20,40,89,5]
+let secondlargest=arr[0]
+let largest=arr[0]
+for(let i=0; i<arr.length; i++){
+    if(largest<arr[i]){
+        largest=arr[i]
+    }
+  
+}
+for(let i=0; i<arr.length; i++){
+    if(secondlargest<arr[i] && largest!=arr[i]){
+        secondlargest=arr[i]
+    }
+    
+}
+console.log(secondlargest)
+*/
+
+
+// smallest element
+/*
+let arr=[10,20,45,67,99,3]
+let smallest=arr[0]
+for(let i=0; i<arr.length; i++){
+    if(smallest>arr[i]){
+        smallest=arr[i]
+    }
+}
+console.log(smallest)
+*/
+
+// secondlargest element
+/*
+let arr=[20,44,8,6,90,22]
+    let smallest=arr[0]
+let secsmallest=arr[0]
+for(let i=0; i<arr[i]; i++){
+    if(smallest>arr[i]){
+        smallest=arr[i]
+    }
+}
+for(let i=0; i<arr[i]; i++){
+    if(secsmallest>arr[i] && smallest!=arr[i]){
+        secsmallest=arr[i]
+    }
+
+}
+console.log(secsmallest)
+*/
+
+
+// check if array is sorted in ascending
+/*
+let arr=[10,20,30,4,50]
+let asc=true
+let desc=true
+function sorted(arr){
+for(let i=0; i<arr.length-1; i++){
+   if(arr[i]>arr[i+1]){
+    asc=false
+   }
+   if(arr[i]<arr[i+1]){
+desc=false
+   }
+}
+return asc || desc
+
+
+}
+console.log(sorted(arr))
+
+*/
+
+// **Find an Element in an Array (Linear Search)**
+//    - **Input:** `[10, 20, 30, 40, 50], key=30`
+//    - **Output:** `Found at index 2`
+
+
+/*
+let arr=[10,20,30,40,50]
+let key=30
+for(let i=0; i<arr.length; i++){
+    if(key===arr[i]){
+        console.log("found at index "+i)
+    }
+}
+*/
+
+
+
+
+
+// binary search
+/*
+let arr=[10,20,30,40,50]
+let key=4
+
+function search(arr,key){
+let start=0; let end=arr.length-1
+
+while(start<=end){
+    let mid=Math.floor((start+end)/2)
+
+    if(arr[mid]==key){
+        return mid;
+    } else if(arr[mid]<key){
+        start=mid+1;
+    }else{
+        end=mid-1
+    }
+}
+return -1
+}
+console.log(search(arr,key))
+*/
+
+
+
+
+// // bubble sort
+// let arr=[23,5,1,66,99,56]
+// let n=arr.length;
+// for(let i=0; i<n; i++){
+//     for(let j=0; j<n-i-1; j++){
+//         if(arr[j]>arr[j+1]){
+//             [arr[j],arr[j+1]]=[arr[j+1],arr[j]]
+//         }
+//     }
+    
+// }
+// console.log(arr)
+
+
+
+
+/*
+// selection sort
+let arr=[23,5,1,66,90,56]
+let n=arr.length
+let j;
+for(let i=0; i<n-1; i++){
+    let smallest=i;
+    for( j=i+1; j<n; j++){
+        if(arr[j]<arr[smallest]){
+            smallest=j
+        }
+    }
+     if(smallest!==i){
+
+    
+        [arr[smallest],arr[i]]=[arr[i],arr[smallest]]
+    
+    }
+}
+    
+    
+
+console.log(arr)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+// **Find the Largest Element in an Array**
+//    - **Input:** `[10, 20, 4, 45, 99]`
+
+let arr=[10,20,4,45,1099]
+let largest=arr[0]
+for(let i=0; i<arr.length; i++){
+    if(largest<arr[i]){
+        largest=arr[i]
+    }
+}
+console.log(largest)
+
+*/
+
+
+
+
+
+// 2. **Find the Second Largest Element in an Array**
+//    - **Input:** `[10, 20, 4, 45, 99]`
+//    - **Output:** `45
+// 
+// `
+
+let arr=[10,20,4,45,99]
+let largest=arr[0]
+let secondlargest=arr[0]
+for(let i=0; i<arr.length; i++){
+    if(largest<arr[i]){
+        largest=arr[i]
+    }
+}
+for(let i=0; i<arr.length; i++){
+    if(secondlargest<arr[i] && largest!=arr[i]){
+        secondlargest=arr[i]
+    }
+    
+}
+console.log("2nd largest is "+ secondlargest + "and largest is "+ largest)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    <!-- <script src="app1.js" type="module" ></script> -->
+    
+</body>
+</html>
