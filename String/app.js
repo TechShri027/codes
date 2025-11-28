@@ -111,7 +111,66 @@
 // for(let i=0; i<splitstr.length; i++){
 //    if(splitstr[i]=='Cats')
 //       splitstr[i]="dogs"
-   
-
 // }
 // console.log(splitstr.join(" "))
+
+
+
+
+
+
+
+
+
+// **9. Find the first non-repeating character.**
+// Input: "aabbcde"
+// Output: "c"
+
+
+// let str="aabbcde"
+// let result=""
+// for(let i=0; i<str.length; i++){
+//     let count=0
+//     for(let j=0; j<str.length; j++){
+//         if(str[i]==str[j])count++
+//     }
+
+// if(count==1){
+//     result=str[i]
+//     break
+// }
+// }
+// console.log(result)
+
+
+
+
+
+// **10. Check if two strings are anagrams.**
+// Input: "listen", "silent"
+// Output: true
+
+// let str1="listen"
+// let str2="silent"
+
+// let splitstr1=""
+// let splitstr2=""
+
+// for(let i=splitstr1.length-1; i>=0; i--){
+    
+// }
+
+
+
+
+
+
+
+
+// reverse a string
+let str="hello"
+let reversestr=""
+for(let i=str.length-1; i>=0; i--){
+reversestr+=str[i]
+}
+console.log(reversestr)
