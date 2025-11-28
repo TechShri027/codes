@@ -168,9 +168,34 @@
 
 
 // reverse a string
-let str="helloh"
-let reversestr=""
+// let str="helloh"
+// let reversestr=""
+// for(let i=str.length-1; i>=0; i--){
+// reversestr+=str[i]
+// }
+// console.log(reversestr)
+
+
+
+
+
+
+
+
+
+
+
+// **2. Check if a string is a palindrome.**
+// Input: "madam"
+// Output: true
+
+let str="madeam"
+let reverse=""
 for(let i=str.length-1; i>=0; i--){
-reversestr+=str[i]
+    reverse+=str[i]
 }
-console.log(reversestr)
+if(reverse==str){
+    console.log(true)
+}else{
+    console.log(false)
+}
