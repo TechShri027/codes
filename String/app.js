@@ -168,7 +168,7 @@
 
 
 // reverse a string
-let str="hello"
+let str="helloh"
 let reversestr=""
 for(let i=str.length-1; i>=0; i--){
 reversestr+=str[i]
