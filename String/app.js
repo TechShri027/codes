@@ -378,10 +378,29 @@
 // Remove all spaces from a string.**
 // Input: "a b c d"
 
-let str="a b c d"
-let letter=str.split("")
-let word=""
-for(let i=0; i<letter.length; i++){
-  word+=letter[i]
-}
-console.log(word)
+// let str="a b c d"
+// let word=""
+// for(let i=0; i<str.length; i++){
+//   if(str[i]!==" ")
+// word+=str[i]
+// }
+// console.log(word)
+
+
+
+
+
+// **8. Replace all occurrences of a word in a string.**
+// Input: "I love cats. Cats are great.", replace "Cats" with "Dogs"
+
+// let str="I love cats. Cats are great."
+// let word=str.split(" ")
+
+// for(let i=0; i<word.length; i++){
+// if(word[i]=="Cats"){
+// word[i]="Dogs"
+// }
+// }
+
+
+// console.log(word.join(" "))
