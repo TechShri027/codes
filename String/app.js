@@ -189,13 +189,199 @@
 // Input: "madam"
 // Output: true
 
-let str="madeam"
-let reverse=""
-for(let i=str.length-1; i>=0; i--){
-    reverse+=str[i]
+// let str="madeam"
+// let reverse=""
+// for(let i=str.length-1; i>=0; i--){
+//     reverse+=str[i]
+// }
+// if(reverse==str){
+//     console.log(true)
+// }else{
+//     console.log(false)
+// }
+
+
+
+
+
+// **3. Count the number of vowels in a string.**
+// Input: "developer"
+// Output: 4
+
+
+// let str="developer"
+// let count=0
+// for(let i=0; i<str.length; i++){
+// count++
+// }
+// console.log(count)
+
+
+
+
+
+
+
+
+
+
+// ```**4. Convert the first letter of each word to uppercase.**
+// // Input: "hello world"
+// // Output: "Hello World"
+
+// let str="hello world"
+// let result=str.split(" ").map((word)=>word.charAt(0).toUpperCase()+word.slice(1))
+
+// console.log(result.join(" "))
+
+
+
+
+
+
+
+// //  Find the longest word in a sentence.**
+// // Input: "I love JavaScript programming"
+// // Output: "JavaScript"
+
+// let str="I love JavaScriptdddd programming"
+// let longest=""
+// let splitword=str.split(" ")
+// for(let i=0; i<splitword.length; i++){
+   
+//     if(splitword[i].length>longest.length){
+//         longest=splitword[i]
+//     }
+// }
+// console.log(longest)
+
+
+
+
+
+
+
+
+
+
+
+
+// **1. Reverse a string.**
+// Input: "hello"
+
+// let str="hello"
+// let reverse=""
+// for(let i=str.length-1; i>=0; i--){
+// reverse+=str[i]
+// }
+// console.log(reverse)
+
+
+
+
+
+
+
+
+
+
+// **2. Check if a string is a palindrome.**
+// Input: "madam"
+
+// let str="maedam"
+// let reverse=""
+// for(let i=str.length-1; i>=0; i--){
+//     reverse+=str[i]
+// }
+// if(reverse==str){
+//     console.log(true)
+// }else{
+//     console.log(false)
+// }
+
+
+
+
+
+
+
+
+
+// **3. Count the number of vowels in a string.**
+// Input: "developer"
+
+// let str="devEloper"
+// let newstr=str.toLowerCase()
+// let count=0
+// for(let i=0; i<newstr.length; i++){
+//     if(newstr[i]=="a" || newstr[i]=="e" || newstr[i]=="i" || newstr[i]=="o" || newstr[i]=="u"){
+//         count++
+//     }
+// }
+// console.log(count)
+
+
+
+
+
+
+
+
+
+// Convert the first letter of each word to uppercase.**
+// Input: "hello world"
+
+// let str="hello world"
+// let result=str.split(" ").map((word)=>word.charAt(0).toUpperCase()+word.slice(1))
+// console.log(result.join(" "))
+
+
+
+
+
+
+
+// Find the longest word in a sentence.**
+// Input: "I love JavaScript programming"
+
+// let str="I love JavaScript programming"
+// let splitting=str.split(" ")
+// let longest=""
+// for(let i=0; i<splitting.length; i++){
+//     if(splitting[i].length>longest.length){
+//         longest=splitting[i]
+//     }
+// }
+// console.log(longest)
+
+
+
+
+
+
+
+
+//  Count the number of words in a sentence.**
+// Input: "This is a test"
+// let str="this is a test"
+// let words=str.split(" ")
+// let count=0
+// for(let i=0; i<words.length; i++){
+//    count++
+// }
+// console.log(count)
+
+
+
+
+
+// Remove all spaces from a string.**
+// Input: "a b c d"
+
+let str="a b c d"
+let letter=str.split("")
+let word=""
+for(let i=0; i<letter.length; i++){
+  word+=letter[i]
 }
-if(reverse==str){
-    console.log(true)
-}else{
-    console.log(false)
-}
+console.log(word)
