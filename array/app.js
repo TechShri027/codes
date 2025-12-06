@@ -1465,3 +1465,23 @@ for(let i=0; i<arr.length; i++){
 //     }
 // }
 // console.log(longest)
+
+
+
+
+
+
+
+
+
+
+// **18. Convert array to object using index as key.**
+// Input:
+// const arr = ['a', 'b'];
+// // Output:
+// // {0: 'a', 1: 'b'}
+// let obj={}
+// for(let i=0; i<arr.length; i++){
+//     obj[i]=arr[i]
+// }
+// console.log(obj)
