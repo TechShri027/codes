@@ -436,4 +436,348 @@
 
 
 
+// **10. Check if two strings are anagrams.**
+// Input: "listen", "silent"
+// Output: true
+
+// let str1="listen"
+// let str2="silenht"
+
+// let s1=str1.split("").sort().join("")
+// let s2=str2.split("").sort().join("")
+
+// if(s1==s2){
+//     console.log("yes its anagram")
+// }else{
+//     console.log("no its not")
+// }
+
+
+
+
+
+// **61. Access object properties using dot notation.**
+// Input:
+// const user = { name: "John", age: 30 }
+
+// console.log(user.name)
+
+
+
+
+
+//  Access object properties using bracket notation.**
+// Input:
+// const user = { name: "John", age: 30 };
+// // Output:
+// // 30
+// console.log(user["age"])
+
+
+
+
+
+
+
+// **63. Add a new key-value pair to an object.**
+// Input:
+
+// Add: obj.b = 2
+// Output:
+// { a: 1, b: 2 }
+
+
+// let obj = { a: 1 };
+// obj.b=2
+// console.log(obj)
+
+
+
+
+
+
+
+
+
+
+
+
+// **64. Delete a key from an object.**
+// Input:
+
+// Delete: delete obj.b
+// Output:
+// { a: 1 }
+
+// let obj = { a: 1, b: 2 };
+// delete obj.b
+// console.log(obj)
+
+
+
+
+
+
+
+
+
+
+
+
+// **65. Check if a key exists in an object.**
+// Input: obj = { a: 1 }, key = "a"
+// Output:
+// true
+
+// let obj={a:1}
+// let key="a"
+// console.log(key in obj)
+
+
+
+
+
+
+
+
+
+
+// **66. Iterate over keys in an object.**
+// Input: { x: 1, y: 2 }
+// Output:
+// x
+// y
+
+// let obj={x:1, y:2}
+// for(let key in obj){
+// console.log(key)
+// }
+
+
+
+
+
+
+
+// 1. Reverse an array.
+// Input:
+
+// Output:
+// [5, 4, 3, 2, 1]
+
+// const arr = [1, 2, 3, 4, 5];
+// let reverse=[]
+// for(let i=arr.length-1; i>=0; i--){
+//     reverse.push(arr[i])
+// }
+// console.log(reverse)
+
+
+
+
+
+
+// reverse in same array
+// let arr=[1,2,3,4,5]
+// for(let i=0; i<arr.length/2; i++){
+//     let temp=arr[i]
+//     arr[i]=arr[arr.length-1-i]
+//     arr[arr.length-1-i]=temp
+// }
+// console.log(arr)
+
+
+
+
+
+
+
+
+
+
+
+// 2. Flatten a nested array.
+// Input:
+
+// Output:
+// [1, 2, 3, 4, 5]
+
+
+// const arr = [1, [2, 3], [4, [5]]];
+// let arr2=[]
+
+// const flatternarr=(arr)=>{
+//    arr.map((item)=>{
+//     if(Array.isArray(item)){
+//         flatternarr(item)
+//     }else{
+//        arr2.push(item)
+//     }
+//    })
+// }
+// flatternarr(arr)
+// console.log(arr2)
+
+
+
+
+
+
+
+// . Remove duplicate elements from an array.
+
+//  [1, 2, 3, 4, 5]
+// const arr = [1, 2, 2, 3, 4, 4, 5];
+// let duparr=[]
+// for(let i=0; i<arr.length; i++){
+//     let found=false
+//     for(let j=0; j<duparr.length; j++){
+//        if(arr[i]==duparr[j]){
+//        found=true
+//        }
+//     }
+//     if(!found){
+//         duparr.push(arr[i])
+//     }
+// }
+// console.log(duparr)
+
+
+
+
+
+
+
+
+
+
+// . Find the maximum value in an array.
+// const arr = [3, 5, 7, 2, 8];
+// let largest=[0]
+// for(let i=0; i<arr.length; i++){
+// if(arr[i]>largest){
+//     largest=arr[i]
+// }
+// }
+// console.log(largest)
+
+
+
+
+
+
+// . Sum all elements in an array.
+
+
+// Input:
+// const arr = [1, 2, 3, 4];
+// Output:
+// 10
+
+// let arr=[1,2,3,4]
+// let sum=0
+// for(let i=0; i<arr.length; i++){
+// sum+=arr[i]
+// }
+// console.log(sum)
+
+
+
+
+
+
+
+
+
+// 6. Merge two arrays.
+
+// Input:
+// const a = [1, 2];
+// const b = [3, 4];
+// let c=[]
+// Output:
+// [1, 2, 3, 4]
+
+// for(let i=0; i<a.length; i++){
+//     c.push(a[i])}
+// for(let i=0; i<b.length; i++){
+//     c.push(b[i])
+// }
+// console.log(c)
+
+
+
+
+
+
+
+// 7. Rotate array to the right by 2 steps.
+
+
+// Input:
+// const arr = [1, 2, 3, 4, 5];
+// Output:
+// [4, 5, 1, 2, 3]
+
+
+// const arr = [1, 2, 3, 4, 5];
+// let k=2
+// let n=arr.length
+// let newarr=[]
+// for(let i=n-k; i<n; i++){
+//     newarr.push(arr[i])
+// }
+// for(let i=0; i<n-k; i++){
+//     newarr.push(arr[i])
+// }
+// console.log(newarr)
+
+
+
+
+
+
+
+
+
+// rotate array by left
+// [3,4,5,1,2]
+// let arr=[1,2,3,4,5]
+// let newarr=[]
+// let n=arr.length
+// let k=2
+// for(let i=n-k-1; i<n; i++){
+// newarr.push(arr[i])
+// }
+// for(let i=0; i<n-k-1; i++){
+//     newarr.push(arr[i])
+// }
+// console.log(newarr)
+
+
+
+
+
+
+
+// Check if all elements are even.
+
+// Output:
+// true
+
+// const arr = [2, 2, 3, 8];
+// let found=true;
+// for(let i=0; i<arr.length; i++){
+    
+//     if(arr[i]%2!==0){
+//       found=false
+//         break;
+//     }
+   
+// }
+// console.log(found)
+
+
+
+
 

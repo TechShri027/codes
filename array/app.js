@@ -1432,14 +1432,36 @@ for(let i=0; i<arr.length; i++){
 
 // **16. Chunk an array into smaller arrays.**
 // Input:
-const arr = [1, 2, 3, 4, 5];
-let result=[]
-// chunk size = 2
-// Output:
-// [[1, 2], [3, 4], [5]
-let size=2
-for(let i=0; i<arr.length; i+=2){
-    result.push(arr.slice(i,i+2))
-}
-console.log(result)
+// const arr = [1, 2, 3, 4, 5];
+// let result=[]
+// // chunk size = 2
+// // Output:
+// // [[1, 2], [3, 4], [5]
+// let size=2
+// for(let i=0; i<arr.length; i+=2){
+//     result.push(arr.slice(i,i+2))
+// }
+// console.log(result)
 
+
+
+
+
+
+
+
+
+
+
+// **17. Find the longest string in an array.**
+// Input:
+const arr = ["a", "abcd", "abc"];
+// Output:
+// "abcd"
+let longest=" "
+for(let i=0; i<arr.length; i++){
+    if(arr[i].length>longest.length){
+        longest=arr[i]
+    }
+}
+console.log(longest)
