@@ -1289,3 +1289,157 @@ for(let i=0; i<arr.length; i++){
 
 
 
+
+// const a = [1, 2, 3];
+// const b = [3, 4, 5];
+// // Output:
+// // [1, 2, 4, 5]
+// let newarr=[]
+// for(let i=0; i<a.length; i++){
+//     let found=false
+//   for(let j=0; j<b.length; j++){
+//       if(a[i]==b[j]){
+//           found=true
+//           break;
+//       }
+//   }
+//   if(!found){
+//       newarr.push(a[i])
+//   }
+//         }
+    
+
+// for(let i=0; i<b.length; i++){
+//     let found=false
+//     for(let j=0; j<a.length; j++){
+//         if(b[i]==a[j]){
+//             found=true
+//             break;
+//         }
+//     }
+//     if(!found){
+//         newarr.push(b[i])
+//     }
+// }
+// console.log(newarr)
+
+
+
+
+
+
+
+
+
+
+// // **15. Remove falsy values from an array.**
+// // Input:
+// const arr = [0, "a", "", false, 5];
+// // Output:
+// // ["a", 5]
+
+// let result=arr.reduce((acc, curr)=>{
+// if(curr) acc.push(curr)
+//     return acc
+// },[])
+// console.log(result)
+
+
+
+
+
+
+
+// // **16. Chunk an array into smaller arrays.*
+// // Input:
+// const arr = [1, 2, 3, 4, 5];
+// let result=[]
+// // chunk size = 2
+// // Output:
+// // [[1, 2], [3, 4], [5]]
+// let size=2
+// for(let i=0; i<arr.length; i+=size){
+// result.push(arr.slice(i,i+size))
+// }
+// console.log(result)
+
+
+
+
+
+
+// **17. Find the longest string in an array.**
+// Input:
+// const arr = ["a", "abcd", "abc"];
+// // Output:
+// // "abcd"
+// let longest=" "
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i].length>longest.length){
+//         longest=arr[i]
+//     }
+// }
+// console.log(longest)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // **19. Find second largest number.**
+// // Input:
+// const arr = [5, 3, 9, 7];
+// // Output:
+// // 7
+// let largest=0;
+// let secondlargest=0
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i]>largest){
+//         largest=arr[i]
+//     }
+// }
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i]>secondlargest && arr[i]!=largest){
+//         secondlargest=arr[i]
+//     }
+// }
+// console.log(secondlargest)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// **16. Chunk an array into smaller arrays.**
+// Input:
+const arr = [1, 2, 3, 4, 5];
+let result=[]
+// chunk size = 2
+// Output:
+// [[1, 2], [3, 4], [5]
+let size=2
+for(let i=0; i<arr.length; i+=2){
+    result.push(arr.slice(i,i+2))
+}
+console.log(result)
+
