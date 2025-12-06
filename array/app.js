@@ -1455,13 +1455,13 @@ for(let i=0; i<arr.length; i++){
 
 // **17. Find the longest string in an array.**
 // Input:
-const arr = ["a", "abcd", "abc"];
-// Output:
-// "abcd"
-let longest=" "
-for(let i=0; i<arr.length; i++){
-    if(arr[i].length>longest.length){
-        longest=arr[i]
-    }
-}
-console.log(longest)
+// const arr = ["a", "abcd", "abc"];
+// // Output:
+// // "abcd"
+// let longest=" "
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i].length>longest.length){
+//         longest=arr[i]
+//     }
+// }
+// console.log(longest)
