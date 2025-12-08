@@ -1244,10 +1244,6 @@ for(let i=0; i<arr.length; i++){
 //     console.log(emailRegex.test(email))
 
 
-
-
-
-
 // **38. Find substring between two characters.**
 // Input: "hello(world)", between "(" and ")"
 // Output: "world"
@@ -1257,15 +1253,12 @@ for(let i=0; i<arr.length; i++){
 // console.log(str.slice(6,11))
 
 
-
 // **37. Convert a string to title case.**
 // Input: "hello javascript developer"
 // Output: "Hello Javascript Developer"
 //  let str="hello javascript developer"
 // let result=str.split(" ").map(word=>word.charAt(0).toUpperCase()+word.slice(1).toLowerCase()).join(" ")
 //  console.log(result)
-
-
 
 
 // **36. Remove punctuation from a string.**
@@ -1280,7 +1273,6 @@ for(let i=0; i<arr.length; i++){
 // **35. Replace numbers with "#" in a string.**
 // Input: "abc123def"
 // Output: "abc###def"
-
 
 
 //  Reverse a string.**
@@ -1485,3 +1477,173 @@ for(let i=0; i<arr.length; i++){
 //     obj[i]=arr[i]
 // }
 // console.log(obj)
+
+
+
+
+
+
+
+
+
+
+
+
+// **20. Find missing number from a sequence.**
+// Input:
+// const arr = [1, 2, 3, 5];
+// // Output:
+// // 3
+
+// let n=arr.length+1
+// let actualsum=0;
+// let expectedsum=(n*(n+1))/2
+
+// for(let i=0; i<arr.length; i++){
+//    actualsum+=arr[i]
+// }
+// let num=expectedsum-actualsum
+// console.log(num)
+
+
+
+
+
+
+
+
+// **20. Find missing number from a sequence.**
+// Input:
+// const arr = [1, 2, 4, 5];
+// let n=arr.length+1
+// // Output:
+// // 3
+// let expectedsum=(n*(n+1))/2
+// let actualsum=0
+// for(let i=0; i<arr.length; i++){
+// actualsum+=arr[i]
+// }
+// console.log(expectedsum-actualsum)
+
+
+
+
+
+
+
+
+// // **21. Remove first and last element.**
+// // Input:
+// const arr = [1, 2, 3, 4];
+// // Output:
+// // [2, 3]
+// let result=[]
+// for(let i=1; i<arr.length-1; i++){
+//     result.push(arr[i])
+// }
+// console.log(result)
+
+
+
+
+
+
+
+// **22. Find intersection without duplicates.**
+// Input:
+// const a = [1, 2, 2, 3];
+// const b = [2, 2, 3];
+// // Output:
+// // [2, 3]
+// let result=[]
+// for(let i=0; i<a.length; i++){
+    
+//     for(let j=0; j<b.length; j++){
+//         if(a[i]==b[j] && !result.includes(a[i]) ){
+//             result.push(a[i])
+            
+//         }
+        
+//     }
+// }
+// console.log(result)
+
+
+
+
+
+
+
+// *23. Replace every element with its square.**
+// Input:
+// const arr = [1, 2, 3];
+// // Output:
+// // [1, 4, 9]
+// for(let i=0; i<arr.length; i++){
+// arr[i]*=arr[i]
+// }
+// console.log(arr)
+
+
+
+
+
+// *24. Find average of elements.**
+// Input:
+// const arr = [2, 4, 6, 8];
+// let n=arr.length
+// let sum=0
+// // Output:
+// // 5
+// for(let i=0; i<n; i++){
+//      sum+=arr[i]
+// }
+// let average=sum/n
+// console.log(average)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // **25. Convert array of key-value pairs to object.**
+// // Input:
+// const arr = [['a', 1], ['b', 2]];
+// const obj={}
+// // Output:
+// // {a: 1, b: 2}
+// for(let i=0; i<arr.length; i++){
+//     let key=arr[i][0]
+//     let value=arr[i][1]
+//     obj[key]=value
+// }
+// console.log(obj)
+
+
+
+
+
+// **26. Create an array with n copies of a value.**
+// Input:
+const val = 'x', n = 3;
+// Output:
+// ['x', 'x', 'x']
+
+let arr=[]
+for(let i=0; i<n; i++){
+    arr.push(val)
+}
+console.log(arr)
+
+
+
